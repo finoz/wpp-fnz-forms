@@ -1,0 +1,104 @@
+{
+  "_comment": "Copy this file to wp-content/fnz-forms-config.json and edit it. Remove this _comment key.",
+
+  "forms": {
+
+    "contact": {
+      "to":              "info@example.com",
+      "from_email":      "noreply@example.com",
+      "from_name":       "My Website",
+      "subject":         "New contact from {email}",
+      "submit_label":    "Send message",
+      "success_message": "Thank you! We'll be in touch soon.",
+      "error_message":   "Something went wrong. Please try again.",
+      "fields": [
+        {
+          "id":          "firstname",
+          "type":        "text",
+          "label":       "First name",
+          "placeholder": "Your first name",
+          "required":    true
+        },
+        {
+          "id":          "lastname",
+          "type":        "text",
+          "label":       "Last name",
+          "placeholder": "Your last name",
+          "required":    true
+        },
+        {
+          "id":          "email",
+          "type":        "email",
+          "label":       "Email",
+          "placeholder": "your@email.com",
+          "required":    true
+        },
+        {
+          "id":          "message",
+          "type":        "textarea",
+          "label":       "Message",
+          "placeholder": "Write your message here…",
+          "required":    true
+        }
+      ]
+    },
+
+    "newsletter": {
+      "to":              "marketing@example.com",
+      "from_email":      "noreply@example.com",
+      "from_name":       "Newsletter Bot",
+      "subject":         "New newsletter signup from {email}",
+      "submit_label":    "Subscribe",
+      "success_message": "You're in! Check your inbox.",
+      "fields": [
+        {
+          "id":       "firstname",
+          "type":     "text",
+          "label":    "First name",
+          "required": true
+        },
+        {
+          "id":          "email",
+          "type":        "email",
+          "label":       "Email",
+          "placeholder": "your@email.com",
+          "required":    true
+        },
+        {
+          "id":       "age",
+          "type":     "number",
+          "label":    "Age",
+          "required": false
+        },
+        {
+          "id":      "topic",
+          "type":    "select",
+          "label":   "Topic of interest",
+          "required": false,
+          "options": [
+            { "value": "tech",     "label": "Technology" },
+            { "value": "design",   "label": "Design" },
+            { "value": "business", "label": "Business" }
+          ]
+        },
+        {
+          "id":      "format",
+          "type":    "radio",
+          "label":   "Preferred format",
+          "required": true,
+          "options": [
+            { "value": "weekly",   "label": "Weekly digest" },
+            { "value": "monthly",  "label": "Monthly roundup" }
+          ]
+        },
+        {
+          "id":       "privacy",
+          "type":     "checkbox",
+          "label":    "I have read and accept the privacy policy.",
+          "required": true
+        }
+      ]
+    }
+
+  }
+}
