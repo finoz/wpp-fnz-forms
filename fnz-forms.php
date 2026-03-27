@@ -2,7 +2,7 @@
 /**
  * Plugin Name:  FNZ Forms
  * Description:  Lightweight JSON-configured contact forms with email notification.
- * Version:      1.1.0
+ * Version:      1.1.1
  * Requires PHP: 8.0
  * Requires at least: 6.0
  * Author:       Finoz
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-define( 'FNZ_FORMS_VERSION', '1.1.0' );
+define( 'FNZ_FORMS_VERSION', '1.1.1' );
 define( 'FNZ_FORMS_DIR',     plugin_dir_path( __FILE__ ) );
 define( 'FNZ_FORMS_URL',     plugin_dir_url( __FILE__ ) );
 
